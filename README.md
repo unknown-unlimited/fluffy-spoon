@@ -1,12 +1,25 @@
 # fluffy-spoon
 
+OPSEC101 -- back to basics 
 
 
-OPSEC101-UNKNOWN-ONLINE-BASICS  
+1 GET A NEW EMAIL  
+	https://protonmail.com/
 
+2 SIGN UP 4 FREE ACCOUNT 
+	https://github.com
+	
+	SEND US @ ADDRESS WE QILL ADD YOU TOO BELOW 
 
+3 NAVIGATE HERE 
+	https://github.com/unknown-unlimited
+	
 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+OPSEC101  -  UNKNOWN-ONLINE-BASICS 
+
+TOOLS
 
 proxychains   
     - a tool that forces any TCP connection made by any given application to follow through proxy like TOR or any other SOCKS4,     `````SOCKS5 or HTTP(S) proxy. Supported auth-types: "user/pass" for SOCKS4/5, "basic" for HTTP. http://proxychains.sourceforge.net/
