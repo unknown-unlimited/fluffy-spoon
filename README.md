@@ -149,7 +149,8 @@ Simple Python script for fetching "some" (usable) proxies. It fetches (periodica
 
 Why should you use it? Well, if you've ever used free proxy lists around you'll know the pain of finding actually working proxies. This tool will automatically do the list fetching and proxy testing for you. Also, only proxies that support HTTPS traffic will be returned, which guarantees access to majority of Internet sites.
 
-https://github.com/stamparm/fetch-some-proxies
+
+https://github.com/unknown-unlimited/fetch-some-proxies
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -244,29 +245,7 @@ https://github.com/Dragon2fly/vpngate-with-proxy
 https://github.com/UnknownSec1/vpngate-with-proxy
 
 
-
-AnonSurf-Installer
-
-This simple script installs anonsurf and all his dependencies on your ubuntu computer and creates the shortcuts to start and stop it.
-
-To run this script you have to open the terminal (Ctrl+Alt+T) and paste:
-
-wget --https-only https://raw.githubusercontent.com/bssec/AnonSurf-Installer/master/as-installer.sh && chmod +x as-installer.sh && sudo bash as-installer.sh
-
-That's all folks!
-
-
-https://github.com/UnknownSec1/AnonSurf-Installer/blob/master/README.md
-
-https://github.com/UnknownSec1/AnonSurf-Installer
-
-
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-
-https://github.com/ParrotSec/anonsurf
-
-https://github.com/unknown-unlimited/anonsurf?organization=unknown-unlimited&organization=unknown-unlimited
 
 
 kali-anonstealth
@@ -322,4 +301,21 @@ Once the installer is complete, you will be able to use both the anonsurf and pa
 https://github.com/UnknownSec1/kali-anonsurf
 
 https://github.com/unknown-unlimited/kali-anonsurf
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ALternate versions https://github.com/UnknownSec1/AnonSurf-Installer/blob/master/README.md
+
+https://github.com/UnknownSec1/AnonSurf-Installer
+
+https://github.com/ParrotSec/anonsurf
+
+https://github.com/unknown-unlimited/anonsurf?organization=unknown-unlimited&organization=unknown-unlimited
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Hybrid parrotsec anonsurf+ Tor-Buddy from AfterBurn @ NetSecNow  
+
+https://github.com/unknown-unlimited/AnonSurfIPRotator
 
