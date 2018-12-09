@@ -1,4 +1,12 @@
-#UNKMOWN fluffy-spoon READ 
+# fluffy-spoon
+
+
+
+OPSEC101--BASIC TOOLS TO BE UNUNKNOWNONLINE  
+
+
+
+
 
 proxychains   
     - a tool that forces any TCP connection made by any given application to follow through proxy like TOR or any other SOCKS4,     `````SOCKS5 or HTTP(S) proxy. Supported auth-types: "user/pass" for SOCKS4/5, "basic" for HTTP. http://proxychains.sourceforge.net/
@@ -120,3 +128,185 @@ https://github.com/UnknownSec1/proxychains.git
 https://github.com/UnknownSec1/proxychains
 
  
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+fetch-some-proxies 
+
+Simple Python script for fetching "some" (usable) proxies. It fetches (periodically updated) list of public proxies and automatically finds in a quick manner those usable in that same moment (Note: testing of SOCKS proxies is currently possible only on non-Windows platforms).
+
+Why should you use it? Well, if you've ever used free proxy lists around you'll know the pain of finding actually working proxies. This tool will automatically do the list fetching and proxy testing for you. Also, only proxies that support HTTPS traffic will be returned, which guarantees access to majority of Internet sites.
+
+https://github.com/stamparm/fetch-some-proxies
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+vpngate-with-proxy
+
+VPN GATE client for linux
+
+    Be able to connect to open vpn servers at http://www.vpngate.net/en/ directly or through proxy
+    Auto add DNS to fix DNS leak.
+    Auto filter out dead VPN servers. (updated on August 16th)
+    Can execute user defined script after vpn_tunnel is established or broken.
+
+Work on Debian and Redhat based system. Tested on Ubuntu, Raspbian, Fedora, Bunsen.
+
+I will wrap SoftEther_vpn later when I have time. You are welcome to fork this repo and wrap SoftEther_vpn yourself.
+
+Indicator: is optional.
+
+Tested on Ubuntu and is only enabled by default on Ubuntu.
+
+For other unix os, you need to modify the run file and install packages below:
+
+sudo apt-get install gir1.2-appindicator3-0.1 gir1.2-notify-0.7 python-gobject
+
+If you have any trouble or request about the program, please make a new issue at https://github.com/Dragon2fly/vpngate-with-proxy/issues
+Dependency:
+
+    python 2.7.x: should already be shipped with your linux
+
+Except python 2.7.x, all below dependencies should be automatically installed at first run.
+
+    openvpn: $ sudo apt-get install openvpn
+    python-requests: $ sudo apt-get install python-requests
+    python-urwid 1.3+: $ sudo apt-get install python-urwid , for tui version (terminal user interface)
+    wmctrl: $ sudo apt-get install wmctrl, for Indicator of tui version, use for focusing window from indicator.
+
+How to use:
+0. Pre-installation
+
+    If your network is behind a proxy
+
+  $ export http_proxy="http://your_proxy:your_port"
+  $ export https_proxy="http://your_proxy:your_port"
+
+    If you has just installed your os, please update your os for it to fetch packages list and know where to download other packages later.
+
+$ sudo apt-get update && sudo apt-get upgrade
+
+    Please check the os clock and calendar if it is correct for openvpn authentication to work properly.
+
+1. Installation:
+
+Using git:
+
+$ sudo apt-get install git
+$ git clone https://github.com/Dragon2fly/vpngate-with-proxy.git
+
+If your network is behind a proxy:
+
+$ sudo -E apt-get install git
+$ git clone https://github.com/Dragon2fly/vpngate-with-proxy.git
+
+You can also download the zip file It contains the "vpngate-with-proxy" folder. Extract it into anywhere you want eg: $HOME.
+
+user_script:
+
+Within this folder, there should be a file user_script.sh. This file allow you to run extra commands to fit your need. You have to manually edit this file and don't change the file name. Commands are divided into 2 groups:
+
+    up: execute after vpn tunnel is established successfully.
+    down: execute after vpn tunnel is broken/terminated.
+
+2. First run:
+
+If you have configured system wide proxy or proxy in firefox, it'd better to turn it off. After vpn tunnel is established, the programs that use system wide proxy may failed to connect to the internet using your proxy.
+
+Launch vpngate-with-proxy by
+
+$ cd vpngate-with-proxy
+$ ./run [arg]
+
+    arg could be either none or tui or cli.
+    vpnproxy_tui.py has better UI, colorful and easier to use. Run when arg is none or tui
+    vpnproxy_cli.py is normal terminal application, lightweight and is aim to run on server (RaspberryPi ?). Run when arg is cli
+
+Then the program will first setup a configuration file config.ini by asking you for proxy if needed to connect to the Internet. After that it will show the default configuration of the program. Change any parameter to suit you and press Enter to continue. Next time launching this program, you won't see this configuration again. Either modify config.ini or check 5. Some notes
+
+If no thing goes wrong, the vpn server's list will show up.
+
+https://github.com/Dragon2fly/vpngate-with-proxy
+
+https://github.com/UnknownSec1/vpngate-with-proxy
+
+
+
+AnonSurf-Installer
+
+This simple script installs anonsurf and all his dependencies on your ubuntu computer and creates the shortcuts to start and stop it.
+
+To run this script you have to open the terminal (Ctrl+Alt+T) and paste:
+
+wget --https-only https://raw.githubusercontent.com/bssec/AnonSurf-Installer/master/as-installer.sh && chmod +x as-installer.sh && sudo bash as-installer.sh
+
+That's all folks!
+
+
+https://github.com/UnknownSec1/AnonSurf-Installer/blob/master/README.md
+
+https://github.com/UnknownSec1/AnonSurf-Installer
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+https://github.com/ParrotSec/anonsurf
+
+https://github.com/unknown-unlimited/anonsurf?organization=unknown-unlimited&organization=unknown-unlimited
+
+
+kali-anonstealth
+
+ParrotSec's anonsurf and stealth, ported to work with Kali Linux.
+How to use this repo
+
+This repo contains the sources of both the anonsurf and pandora packages from ParrotSec combined into one.
+
+Modifications have been made to use the DNS servers of Private Internet Access (instead of FrozenDNS), and fixes for users who don't use the resolvconf application. I have removed some functionality such as the gui and iceweasel in ram.
+
+This repo can be compiled into a deb package to correctly install it on a Kali system.
+
+The easiest way to get this working is to just run the installer. See the installation section for further info.
+
+NOTE: This may work with any debian/ubuntu system, but this has only been tested to work on a kali-rolling amd64 system
+Usage
+Pandora
+
+Pandora automatically overwrites the RAM when the system is shutting down. Pandora can also be ran manually:
+
+pandora bomb
+
+NOTE: This will clear the entire system cache, including active SSH tunnels or sessions.
+anonsurf
+
+Anonsurf will anonymize the entire system under TOR using IPTables. It will also allow you to start and stop i2p as well.
+
+NOTE: DO NOT run this as service anonsurf $COMMAND. Run this as anonsurf $COMMAND
+
+Usage:
+ anonsurf {start|stop|restart|change|status}
+
+ start - Start system-wide anonymous
+          tunneling under TOR proxy through iptables
+ stop - Reset original iptables settings
+          and return to clear navigation
+ restart - Combines "stop" and "start" options
+ change - Changes identity restarting TOR 
+ status - Check if AnonSurf is working properly
+----[ I2P related features ]----
+ starti2p - Start i2p services
+ stopi2p - Stop i2p services
+
+Installation
+
+This package comes with an installer that makes things extremely easy:
+
+./installer.sh
+
+Once the installer is complete, you will be able to use both the anonsurf and pandora modules.
+
+https://github.com/UnknownSec1/kali-anonsurf
+
+https://github.com/unknown-unlimited/kali-anonsurf
+
