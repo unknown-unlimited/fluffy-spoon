@@ -9,16 +9,16 @@ OPSEC101 -- back to basics
 2 SIGN UP 4 FREE ACCOUNT 
 	https://github.com
 	
-	SEND US @ ADDRESS WE QILL ADD YOU TOO BELOW 
-
+	SEND @ ADDRESS
 3 NAVIGATE HERE 
 	https://github.com/unknown-unlimited
 	
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-OPSEC101  -  UNKNOWN-ONLINE-BASICS 
+OPSEC101  -
 
+UNKNOWN-ONLINE-BASICS 
 TOOLS
 
 proxychains   
