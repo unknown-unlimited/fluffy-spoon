@@ -3,8 +3,7 @@
 OPSEC101 -- back to basics 
 
 
-1 GET A NEW EMAIL  
-	https://protonmail.com/
+1 GET A NEW EMAIL  https://protonmail.com/
 
 2 SIGN UP 4 FREE ACCOUNT 
 	https://github.com
