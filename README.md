@@ -304,7 +304,9 @@ https://github.com/unknown-unlimited/kali-anonsurf
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-ALternate versions https://github.com/UnknownSec1/AnonSurf-Installer/blob/master/README.md
+ALternate versions
+
+https://github.com/UnknownSec1/AnonSurf-Installer/blob/master/README.md
 
 https://github.com/UnknownSec1/AnonSurf-Installer
 
