@@ -21,7 +21,7 @@ UNKNOWN-ONLINE-BASICS
 TOOLS
 
 proxychains   
-    - a tool that forces any TCP connection made by any given application to follow through proxy like TOR or any other SOCKS4,     `````SOCKS5 or HTTP(S) proxy. Supported auth-types: "user/pass" for SOCKS4/5, "basic" for HTTP. http://proxychains.sourceforge.net/
+    - a tool that forces any TCP connection made by any given application to follow through proxy like TOR or any other SOCKS4,      `S    OCKS5 or HTTP(S) proxy. Supported auth-types: "user/pass" for SOCKS4/5, "basic" for HTTP.   ttp://proxychains.sourceforge.net/
 
 ProxyChains
 
